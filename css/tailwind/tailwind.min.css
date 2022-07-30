@@ -42,7 +42,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
 }
 
@@ -804,6 +804,10 @@ video {
   overflow: hidden;
 }
 
+.rounded-10 {
+  border-radius: 0.625rem;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -846,6 +850,11 @@ video {
   border-color: rgb(31 41 55 / var(--tw-border-opacity));
 }
 
+.bg-body {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .bg-gray-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
@@ -863,6 +872,22 @@ video {
 
 .bg-transparent {
   background-color: transparent;
+}
+
+.bg-gradient-orange {
+  background-image: linear-gradient(98.24deg, #FFB36D 0%, #EC5353 100%);
+}
+
+.bg-gradient-cyan {
+  background-image: linear-gradient(90deg, rgba(108,213,246,1) 0%, rgba(248,157,92,1) 50%, rgba(91,106,240,1) 100%);
+}
+
+.bg-gradient-blue {
+  background-image: linear-gradient(98.24deg, #56C1E3 0%, #5B6AF0 100%);
+}
+
+.bg-gradient-purple2 {
+  background-image: linear-gradient(98.24deg, #F39682 0.01%, #7446F7 100%);
 }
 
 .bg-clip-text {
@@ -959,13 +984,21 @@ video {
   text-align: center;
 }
 
+.font-body {
+  font-family: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.font-heading {
+  font-family: "Outfit", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
 .text-6xl {
-  font-size: 3.75rem;
+  font-size: 2.625rem;
   line-height: 1;
 }
 
@@ -975,7 +1008,7 @@ video {
 }
 
 .text-xl {
-  font-size: 1.25rem;
+  font-size: 1.313rem;
   line-height: 1.75rem;
 }
 
@@ -994,6 +1027,11 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.text-body {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -1035,9 +1073,9 @@ video {
 }
 
 .transition {
-  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1069,6 +1107,10 @@ video {
   border-color: transparent;
 }
 
+.hover\:bg-gradient-orange:hover {
+  background-image: linear-gradient(98.24deg, #FFB36D 0%, #EC5353 100%);
+}
+
 .hover\:text-gray-200:hover {
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity));
@@ -1090,7 +1132,7 @@ video {
   }
 
   .sm\:text-7xl {
-    font-size: 4.5rem;
+    font-size: 3rem;
     line-height: 1;
   }
 }

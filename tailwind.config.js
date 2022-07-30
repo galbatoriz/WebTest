@@ -4,6 +4,7 @@ module.exports = {
         './src/html/*.html',
         './*.html',
         '*.html',
+        './index.html'
 
     ],
     

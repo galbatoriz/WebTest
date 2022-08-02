@@ -585,6 +585,10 @@ video {
   }
 }
 
+.static {
+  position: static;
+}
+
 .fixed {
   position: fixed;
 }
@@ -686,6 +690,10 @@ video {
 
 .-m-10 {
   margin: -2.5rem;
+}
+
+.m-10 {
+  margin: 2.5rem;
 }
 
 .mx-auto {
@@ -1077,9 +1085,17 @@ video {
   background-attachment: fixed;
 }
 
+.bg-scroll {
+  background-attachment: scroll;
+}
+
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
+}
+
+.bg-top {
+  background-position: top;
 }
 
 .bg-no-repeat {
@@ -1703,6 +1719,10 @@ video {
 
   .lg\:pb-20 {
     padding-bottom: 5rem;
+  }
+
+  .lg\:pb-14 {
+    padding-bottom: 3.5rem;
   }
 }
 

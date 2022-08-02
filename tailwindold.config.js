@@ -1,10 +1,11 @@
 module.exports = {
     content: [
-      './src/pug/*.pug',
-      './src/html/*.html',
-      './*.html',
-      '*.html',
-      './index.html'
+        './src/pug/*.pug',
+        './src/html/*.html',
+        './*.html',
+        '*.html',
+        './index.html'
+
     ],
     
     theme: {
@@ -1043,5 +1044,7 @@ module.exports = {
         zIndex: ['responsive', 'focus-within', 'focus'],
     },
     corePlugins: {},
-    plugins: [],
+    plugins: [
+      require('@tailwindcss/typography'),
+    ],
 }
